@@ -18,9 +18,10 @@ pipeline {
 			
 									
 										
-										
-										
-										
+										sh "docker stop server-1"
+										sh "docker system prune -a -f"
+										sh "rm -rf war war@tmp/"
+										sh "docker stop server-1"
 										
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
 										sh "chmod 777 index.html"
