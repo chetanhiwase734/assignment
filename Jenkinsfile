@@ -18,8 +18,7 @@ pipeline {
 			
 									
 										
-										sh "docker stop server-1"
-										sh "docker system prune -a -f"
+										
 										sh "rm -rf war war@tmp/"
 										
 										
