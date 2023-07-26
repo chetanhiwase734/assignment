@@ -20,7 +20,7 @@ pipeline {
 										
 										
 										
-										sh "docker kill server-1"
+										
 										
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
 										sh "chmod 777 index.html"
