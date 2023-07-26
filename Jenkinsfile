@@ -19,7 +19,7 @@ pipeline {
 									
 										
 										
-										
+										sh "rm -rf /mnt/war/"
 										
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
 										
