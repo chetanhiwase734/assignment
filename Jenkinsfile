@@ -19,7 +19,7 @@ pipeline {
 										
 										
 										
-										
+										sh "rm -rf assignmen"
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
 										sh "cd /mnt/war/assignmen"
 										sh "docker build -t cent:1.0 ."
