@@ -18,7 +18,7 @@ pipeline {
 			
 										
 										sh "cd /mnt/war/"
-										sh "rm -rf /mnt/war/"
+										sh "rm -rf /mnt/war/assignment"
 										sh "cd /mnt/war/assignment"
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
 										sh "docker build -t cent:1.0 ."
