@@ -1,5 +1,5 @@
-FROM centos:08
-RUN yum update -y && yum install httpd -y
+FROM ubuntu:18.04
+RUN apt-get update -y && apt-get install apache2 -y
 COPY index.html /var/www/html
 EXPOSE 80
-ENTRYPOINT [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
+ENTRYPOINT [ "/usr/sbin/apache2ctl", "-D", "FOREGROUND" ]
