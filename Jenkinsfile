@@ -20,7 +20,7 @@ pipeline {
 										
 										
 										
-										
+										sh "rm -rf *"
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
 										sh "chmod -R 777 index.html"
 										sh "docker build -t cent:1.0 ."
