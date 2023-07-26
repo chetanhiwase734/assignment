@@ -17,6 +17,9 @@ pipeline {
 								steps{
 			
 										
+										
+										sh "/mnt/war/"
+										sh "rm -rf assignment"
 										sh "cd /mnt/war/"
 										
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
