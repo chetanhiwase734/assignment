@@ -19,7 +19,9 @@ pipeline {
 										
 										
 										
-										
+										sh "rm -rf *"
+										sh "docker stop server-1"
+										sh "docker system prune -a -f"
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
 										sh "cd /mnt/war/"
 										sh "docker build -t cent:1.0 ."
