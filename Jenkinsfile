@@ -15,8 +15,7 @@ pipeline {
 					stage ("indexdocker") {
 					
 								steps{
-										sh "docker stop server-1.2"
-										sh "docker system prune -a -f"
+										
 										sh "rm -rf /mnt/war war@tmp"
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
 										sh "docker build -t cent:1.0 ."
