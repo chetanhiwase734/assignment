@@ -18,7 +18,7 @@ pipeline {
 								steps{
 										
 										
-										sh "cd /mnt"
+										sh "cd /mnt/"
 										sh "rm -rf war war@tmp/"
 										
 										sh " cd /mnt/war"
