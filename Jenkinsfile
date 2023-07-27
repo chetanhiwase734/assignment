@@ -5,7 +5,7 @@ pipeline {
 			label{
 			
 					label "built-in"
-					customWorkspace "/root/index/"
+					customWorkspace "/mnt/war"
 			
 			}
 		}
