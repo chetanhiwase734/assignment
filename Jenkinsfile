@@ -17,6 +17,9 @@ pipeline {
 					
 								steps{
 										
+										sh "docker stop server-1.2"
+										sh "docker system prune -a -f"
+										sh " rm -rf /root/.jenkins/workspace/ index.html_master"
 										
 										sh "git clone https://github.com/chetanhiwase734/assignment.git"
 										sh "docker build -t cent:1.0 ."
