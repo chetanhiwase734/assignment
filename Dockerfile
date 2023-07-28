@@ -1,7 +1,9 @@
-FROM ubuntu:18.04
-RUN apt-get update -y && apt-get install apache2 -y
-RUN service apache2 restart
-COPY index.html /var/www/html/
-RUN chmod -R 777 /var/www/html/index.html
-EXPOSE 80
-ENTRYPOINT [ "/usr/sbin/apache2ctl", "-D", "FOREGROUND" ]
+FROM tomcat:latest
+
+LABEL maintainer="chetan hiwase"
+
+ADD ./gameoflife-web/target/gameoflife.war /usr/local/tomcat/webapps/
+
+EXPOSE 8080
+
+CMD ["catalina.sh", "run"]
