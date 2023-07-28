@@ -17,7 +17,7 @@ pipeline {
 					
 								steps{
 										
-										sh "docker stop server-1"
+										sh "docker stop server-1.2"
 										sh "docker system prune -a -f"
 										sh "cd /mnt/"
 										sh "rm -rf war war@tmp/"
